@@ -9,7 +9,8 @@ public class Sentense {
         name = "Filip";
         yearBirth = 2009;
         code = 'A';
+        int age = 2022-yearBirth;
         
-        System.out.println("Dite" + name + " ma " + (2022-yearBirth) +"let");
+        System.out.println("Dite " + name + " ma " + age + "let. Chodi do " + (age - 6) + "." + code);
     }
 }
