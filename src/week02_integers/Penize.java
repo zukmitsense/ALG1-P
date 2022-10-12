@@ -41,5 +41,6 @@ a mince v hodnotě 100, 50, 20, 10, 5, 2 a 1 Kč.*/
         System.out.println("Pocet dva: " + pocetDva);
         System.out.println("Pocet jedna: " + pocetJedna);
     }
-//TODO format
+System.out.printf("%10s %5s %5s %5s", "Bankovky", STO, PADESAT. DVACET);
+System.out.printf("%10s %5s %5s %5s", "Pocet", pocetSto, pocetPadesat, pocetDvacet);    
 }
