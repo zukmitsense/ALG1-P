@@ -1,6 +1,7 @@
 package week02_integers;
 
 public class Penize {
+
     public static void main(String[] args) {
         /*Zapište program, který pro zadanou celočíselnou hodnotu představující částku v korunách určí výčetku platidel,
 tedy počet bankovek a mincí, kterými lze zadanou sumu zaplatit. Ve svém programu se omezte na bankovky
@@ -16,7 +17,7 @@ a mince v hodnotě 100, 50, 20, 10, 5, 2 a 1 Kč.*/
         final int PET = 5;
         final int DVA = 2;
         final int JEDNA = 1;
-        
+
 //processing
         int pocetSto = castka / STO;
         int zbytek = castka % STO;
@@ -31,7 +32,7 @@ a mince v hodnotě 100, 50, 20, 10, 5, 2 a 1 Kč.*/
         int pocetDva = zbytek / DVA;
         zbytek = zbytek % DVA;
         int pocetJedna = zbytek / JEDNA;
-                
+
 //out
         System.out.println("Pocet sto: " + pocetSto);
         System.out.println("Pocet padesat: " + pocetPadesat);
@@ -40,7 +41,8 @@ a mince v hodnotě 100, 50, 20, 10, 5, 2 a 1 Kč.*/
         System.out.println("Pocet pet: " + pocetPet);
         System.out.println("Pocet dva: " + pocetDva);
         System.out.println("Pocet jedna: " + pocetJedna);
+
+        System.out.printf("%10s %5s %5s %5s\n", "Bankovky", STO, PADESAT, DVACET);
+        System.out.printf("%10s %5s %5s %5s\n", "Pocet", pocetSto, pocetPadesat, pocetDvacet);
     }
-System.out.printf("%10s %5s %5s %5s", "Bankovky", STO, PADESAT. DVACET);
-System.out.printf("%10s %5s %5s %5s", "Pocet", pocetSto, pocetPadesat, pocetDvacet);    
 }
