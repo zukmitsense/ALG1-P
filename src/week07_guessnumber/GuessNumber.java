@@ -59,8 +59,27 @@ public class GuessNumber {
     }
 
     private static void userGuesses() {
-        System.out.println("Tady bude varianta uzivatel hada");
+        int randomInt = (int) Math.floor(Math.random() * (maxValue - minValue + 1) + minValue);
+        int guess;
+        boolean end = false;
+        int pocetPokusu = 0;
+
+        System.out.println("Uživateli, hádej číslo v rozsahu od " + minValue + " do " + maxValue + ".");
+        guess = sc.nextInt();
+
+        do {
+            pocetPokusu += 1;
+            if (guess < randomInt) {
+                System.out.println("Hádej větší číslo.");
+                guess = sc.nextInt();
+            } else if (guess > randomInt) {
+                System.out.println("Hádej menší číslo.");
+                guess = sc.nextInt();
+            } else {
+                System.out.println("Trefa");
+                System.out.println("Počet pokusů: " + pocetPokusu);
+                end = true;
+            }
+        } while (!end);
     }
-    
-    
 }
